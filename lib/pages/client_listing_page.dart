@@ -6,6 +6,7 @@ import 'package:chronos/pages/view_client.dart';
 import 'package:chronos/widgets/custom_bottom_nav_bar.dart';
 import 'package:chronos/widgets/custom_drawer.dart';
 import 'package:chronos/widgets/custom_search_delegate_ad_story.dart';
+import 'package:chronos/widgets/custom_search_delegate_clients.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
@@ -65,7 +66,7 @@ class _ClientsPageState extends State<ClientsPage> {
         actions: [
           IconButton(
               onPressed: () {
-                showSearch(context: context, delegate: CustomSearchDelegateAdStory());
+                showSearch(context: context, delegate: CustomSearchDelegateClients());
               },
               icon: const Icon(Icons.search)
           )
@@ -74,20 +75,19 @@ class _ClientsPageState extends State<ClientsPage> {
       ),
       backgroundColor: backgroundColor,
       drawer: const CustomDrawer(),
-      bottomNavigationBar: const CustomBottomNavigationBar(selectedIndex: 1),
       body: Padding(
         padding: EdgeInsets.all(MediaQuery.of(context).size.height/80),
         child: SingleChildScrollView(
-          controller: scrollController,
           child: Column(
             children: [
               SizedBox(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height/6,
+                height: MediaQuery.of(context).size.height/5,
                 child: GestureDetector(
                   child: CircleAvatar(
-                    radius: MediaQuery.of(context).size.height/80,
+                    radius: MediaQuery.of(context).size.height/50,
                     backgroundImage: NetworkImage(chronosClient.networkImage),
+                    backgroundColor: backgroundColor,
                   ),
                   onTap: () {
                     // go to the chronos client page

@@ -2,6 +2,7 @@ import 'package:chronos/constants/constants.dart';
 import 'package:chronos/objects/artist.dart';
 import 'package:chronos/widgets/custom_bottom_nav_bar.dart';
 import 'package:chronos/widgets/custom_search_delegate_ad_story.dart';
+import 'package:chronos/widgets/custom_search_delegate_artists.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -23,7 +24,7 @@ class _ViewArtistPageState extends State<ViewArtistPage> {
         actions: [
           IconButton(
               onPressed: () {
-                showSearch(context: context, delegate: CustomSearchDelegateAdStory());
+                showSearch(context: context, delegate: CustomSearchDelegateArtist());
               },
               icon: const Icon(Icons.search)
           )
@@ -31,7 +32,6 @@ class _ViewArtistPageState extends State<ViewArtistPage> {
         iconTheme: const IconThemeData(color: iconThemeDataColor),
       ),
       backgroundColor: backgroundColor,
-      bottomNavigationBar: const CustomBottomNavigationBar(selectedIndex: 0),
       body:  SingleChildScrollView(
         child: Center(
           child: Column(
@@ -71,6 +71,7 @@ class _ViewArtistPageState extends State<ViewArtistPage> {
                   trailing: const Icon(Icons.more_vert_rounded),
                   onTap: () {
                     // launch url launcher
+                    launchUrlWithIntent(widget.artist.portfolio);
                   },
                 ),
               ),
@@ -87,6 +88,7 @@ class _ViewArtistPageState extends State<ViewArtistPage> {
                   trailing: const Icon(Icons.more_vert_rounded),
                   onTap: () {
                     // launch url launcher
+                    launchUrlWithIntent(widget.artist.patreon);
                   },
                 ),
               ),
@@ -103,6 +105,7 @@ class _ViewArtistPageState extends State<ViewArtistPage> {
                   trailing: const Icon(Icons.more_vert_rounded),
                   onTap: () {
                     // launch url launcher
+                    launchUrlWithIntent(widget.artist.store);
                   },
                 ),
               ),
@@ -120,6 +123,7 @@ class _ViewArtistPageState extends State<ViewArtistPage> {
                   trailing: const Icon(Icons.more_vert_rounded),
                   onTap: () {
                     // launch url launcher
+                    launchUrlWithIntent(widget.artist.twitter);
                   },
                 ),
               ),
@@ -136,6 +140,7 @@ class _ViewArtistPageState extends State<ViewArtistPage> {
                   trailing: const Icon(Icons.more_vert_rounded),
                   onTap: () {
                     // launch url launcher
+                    launchUrlWithIntent(widget.artist.tiktok);
                   },
                 ),
               ),
@@ -152,6 +157,7 @@ class _ViewArtistPageState extends State<ViewArtistPage> {
                   trailing: const Icon(Icons.more_vert_rounded),
                   onTap: () {
                     // launch url launcher
+                    launchUrlWithIntent(widget.artist.instagram);
                   },
                 ),
               ),

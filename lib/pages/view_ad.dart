@@ -34,7 +34,6 @@ class _ViewAdStoryState extends State<ViewAdStory> {
         iconTheme: const IconThemeData(color: iconThemeDataColor),
       ),
       backgroundColor: backgroundColor,
-      bottomNavigationBar: const CustomBottomNavigationBar(selectedIndex: 0),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -92,7 +91,8 @@ class _ViewAdStoryState extends State<ViewAdStory> {
                 children: [
                   Expanded(child: ElevatedButton(
                       onPressed: () {
-
+                        // go to instagram site
+                        launchUrlWithIntent(widget.adStory.instagram);
                       },
                       child: const Text('Instagram')
                   ))
@@ -104,28 +104,29 @@ class _ViewAdStoryState extends State<ViewAdStory> {
                 children: [
                   Expanded(child: ElevatedButton(
                       onPressed: () {
-
+                        launchUrlWithIntent(widget.adStory.youtubeLink);
                       },
                       child: const Text('Youtube')
                   ))
                 ],
               ),
               const Divider(),
-              Row(
-                children: [
-                  Expanded(child: ElevatedButton(
-                      onPressed: () {
-                        // todo: save the ad and notify user of each update to add
-
-                      },
-                      child: Row(mainAxisAlignment: MainAxisAlignment.center, children:  [
-                        const Text('Follow this tale!'),
-                        SizedBox(width: screenWidth(context)/50,),
-                        const Icon(Icons.notification_add),
-                      ],)
-                  ))
-                ],
-              ),
+              //todo: add save story and follow it functionality
+              // Row(
+              //   children: [
+              //     Expanded(child: ElevatedButton(
+              //         onPressed: () {
+              //           // todo: save the ad and notify user of each update to add
+              //           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Story saved')));
+              //         },
+              //         child: Row(mainAxisAlignment: MainAxisAlignment.center, children:  [
+              //           const Text('Follow this tale!'),
+              //           SizedBox(width: screenWidth(context)/50,),
+              //           const Icon(Icons.notification_add),
+              //         ],)
+              //     ))
+              //   ],
+              // ),
               
             ],
           ),

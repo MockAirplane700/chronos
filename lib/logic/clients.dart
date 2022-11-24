@@ -16,6 +16,18 @@ class ClientsLogic {
         primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
     Client(name: 'Liber', networkImage: 'https://firebasestorage.googleapis.com/v0/b/coupons-are-us.appspot.com/o/30%20off%20lens.png?alt=media&token=6a502c85-9952-43b0-ab47-aecaf559b8c9', website: 'https://www.sizibamthandazo.dev/projects/markerrepo',
         primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
+    Client(name: 'Liber', networkImage: 'https://firebasestorage.googleapis.com/v0/b/coupons-are-us.appspot.com/o/Liber%20logo.png?alt=media&token=4965c137-e0da-41cd-b985-3835fa214116', website: 'https://www.sizibamthandazo.dev/projects/markerrepo',
+        primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
+    Client(name: 'Liber', networkImage: 'https://firebasestorage.googleapis.com/v0/b/coupons-are-us.appspot.com/o/Liber%20logo.png?alt=media&token=4965c137-e0da-41cd-b985-3835fa214116', website: 'https://www.sizibamthandazo.dev/projects/markerrepo',
+        primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
+    Client(name: 'Liber', networkImage: 'https://firebasestorage.googleapis.com/v0/b/coupons-are-us.appspot.com/o/Liber%20logo.png?alt=media&token=4965c137-e0da-41cd-b985-3835fa214116', website: 'https://www.sizibamthandazo.dev/projects/markerrepo',
+        primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
+    Client(name: 'Liber', networkImage: 'https://firebasestorage.googleapis.com/v0/b/coupons-are-us.appspot.com/o/Liber%20logo.png?alt=media&token=4965c137-e0da-41cd-b985-3835fa214116', website: 'https://www.sizibamthandazo.dev/projects/markerrepo',
+        primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
+    Client(name: 'Liber', networkImage: 'https://firebasestorage.googleapis.com/v0/b/coupons-are-us.appspot.com/o/Liber%20logo.png?alt=media&token=4965c137-e0da-41cd-b985-3835fa214116', website: 'https://www.sizibamthandazo.dev/projects/markerrepo',
+        primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
+    Client(name: 'Liber', networkImage: 'https://firebasestorage.googleapis.com/v0/b/coupons-are-us.appspot.com/o/Liber%20logo.png?alt=media&token=4965c137-e0da-41cd-b985-3835fa214116', website: 'https://www.sizibamthandazo.dev/projects/markerrepo',
+        primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
     Client(name: 'Liber', networkImage: 'https://firebasestorage.googleapis.com/v0/b/coupons-are-us.appspot.com/o/30%20off%20lens.png?alt=media&token=6a502c85-9952-43b0-ab47-aecaf559b8c9', website: 'https://www.sizibamthandazo.dev/projects/markerrepo',
         primarySocialNetwork: 'https://www.tiktok.com/@fireplusplus', about: 'Ever wished you had access to all those great websites we see from tiktok without having to search through your saved videos? Well consider it granted, Liber is essentially a catalog of these websites with useful information about the websites themselves and the tiktok accounts used to source them'),
   ];
@@ -42,7 +54,7 @@ class ClientsLogic {
               instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
               tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
               store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-          )
+          ), instagram: 'https://www.instagram.com'
       ),
       AdStory(
           name: 'John Doe',
@@ -59,7 +71,7 @@ class ClientsLogic {
               instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
               tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
               store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-          )
+          ), instagram: 'https://www.instagram.com'
       ),
       AdStory(
           name: 'John Doe',
@@ -76,7 +88,7 @@ class ClientsLogic {
               instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
               tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
               store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-          )
+          ), instagram: 'https://www.instagram.com'
       ),
       AdStory(
           name: 'John Doe',
@@ -93,7 +105,7 @@ class ClientsLogic {
               instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
               tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
               store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-          )
+          ), instagram: 'https://www.instagram.com'
       ),
       AdStory(
           name: 'John Doe',
@@ -110,7 +122,7 @@ class ClientsLogic {
               instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
               tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
               store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-          )
+          ), instagram: 'https://www.instagram.com'
       ),
     ];
   }//end method

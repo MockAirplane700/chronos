@@ -3,6 +3,7 @@ import 'package:chronos/logic/ad_stories.dart';
 import 'package:chronos/objects/ad_story.dart';
 import 'package:chronos/pages/view_ad.dart';
 import 'package:chronos/widgets/custom_bottom_nav_bar.dart';
+import 'package:chronos/widgets/custom_search_delegate_ad_story.dart';
 import 'package:flutter/material.dart';
 
 class ViewSavedAds extends StatefulWidget {
@@ -21,10 +22,17 @@ class _ViewSavedAdsState extends State<ViewSavedAds> {
       appBar: AppBar(
         title: const Text('Saved stories' , style: TextStyle(color: textColor),),
         backgroundColor: appBarColor,
+        actions: [
+          IconButton(
+              onPressed: () {
+                showSearch(context: context, delegate: CustomSearchDelegateAdStory());
+              },
+              icon: const Icon(Icons.search)
+          ),
+        ],
         iconTheme: const IconThemeData(color: iconThemeDataColor),
       ),
       backgroundColor: backgroundColor,
-      bottomNavigationBar: const CustomBottomNavigationBar(selectedIndex: 0,),
       body: Padding(padding: EdgeInsets.all(MediaQuery.of(context).size.height/80), child: Center(
         child: ListView.builder(
             itemBuilder: (context , index) {

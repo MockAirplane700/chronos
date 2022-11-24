@@ -8,12 +8,13 @@ class AdStory {
   final Client client;
   final String networkImage;
   final String youtubeLink;
+  final String instagram;
   final String story;
   final Artist artist;
 
   AdStory({
     required this.name, required this.client, required this.networkImage,
-    required this.youtubeLink, required this.story, required this.artist
+    required this.youtubeLink,required this.instagram, required this.story, required this.artist
 });
 
 

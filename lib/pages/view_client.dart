@@ -4,6 +4,7 @@ import 'package:chronos/objects/client.dart';
 import 'package:chronos/pages/view_ad.dart';
 import 'package:chronos/widgets/custom_bottom_nav_bar.dart';
 import 'package:chronos/widgets/custom_search_delegate_ad_story.dart';
+import 'package:chronos/widgets/custom_search_delegate_clients.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -17,9 +18,15 @@ class ViewClientPage extends StatefulWidget {
 }
 
 class _ViewClientPageState extends State<ViewClientPage> {
+  late double height;
+  late double width;
+
   @override
   Widget build(BuildContext context) {
     List<AdStory> stories = widget.client.relevantAdStories();
+    height = MediaQuery.of(context).size.height;
+    width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.client.name, style: const TextStyle(color: textColor),),
@@ -27,7 +34,7 @@ class _ViewClientPageState extends State<ViewClientPage> {
         actions: [
           IconButton(
               onPressed: () {
-                showSearch(context: context, delegate: CustomSearchDelegateAdStory());
+                showSearch(context: context, delegate: CustomSearchDelegateClients());
               },
               icon: const Icon(Icons.search)
           )
@@ -35,7 +42,6 @@ class _ViewClientPageState extends State<ViewClientPage> {
         iconTheme: const IconThemeData(color: iconThemeDataColor),
       ),
       backgroundColor: backgroundColor,
-      bottomNavigationBar: const CustomBottomNavigationBar(selectedIndex: 1),
       body:  SingleChildScrollView(
         child: Center(
             child: Column(
@@ -48,7 +54,10 @@ class _ViewClientPageState extends State<ViewClientPage> {
                 ),),
                 // About the client
                 const Divider(),
-                Text('About the organization: ${widget.client.about}', style: const TextStyle(color: textColor),),
+                Padding(
+                  padding:  EdgeInsets.all(height/80),
+                  child: Text('About the organization: ${widget.client.about}', style: const TextStyle(color: textColor),),
+                ),
                 // link to their website  [ List tile]
                 const Divider(),
                 Card(
@@ -79,6 +88,7 @@ class _ViewClientPageState extends State<ViewClientPage> {
                     trailing: const Icon(Icons.more_vert_outlined),
                     onTap: () {
                       // visit website url launcher
+                      launchUrlWithIntent(widget.client.primarySocialNetwork);
                     },
                   ),
                 ),

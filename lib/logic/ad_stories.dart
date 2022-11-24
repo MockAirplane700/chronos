@@ -19,7 +19,7 @@ class AdStories {
             instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
             tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
             store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-        )
+        ), instagram: 'https://www.instagram.com'
     ),
     AdStory(
         name: 'John Doe',
@@ -36,7 +36,7 @@ class AdStories {
             instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
             tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
             store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-        )
+        ), instagram: 'https://www.instagram.com'
     ),
     AdStory(
         name: 'John Doe',
@@ -53,7 +53,7 @@ class AdStories {
             instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
             tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
             store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-        )
+        ), instagram: 'https://www.instagram.com'
     ),
     AdStory(
         name: 'John Doe',
@@ -70,7 +70,7 @@ class AdStories {
             instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
             tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
             store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-        )
+        ), instagram: 'https://www.instagram.com'
     ),
     AdStory(
         name: 'John Doe',
@@ -87,7 +87,7 @@ class AdStories {
             instagram: 'https://www.instagram.com/', twitter: 'https://twitter.com/',
             tiktok: 'https://www.tiktok.com/', patreon: 'https://www.patreon.com/',
             store: 'https://www.printful.com/', country: 'Country', city: 'Winnipeg',networkImage: 'https://i.ytimg.com/vi/B3uOHcbJDQQ/maxresdefault.jpg', about: 'lorem ipsum'
-        )
+        ), instagram: 'https://www.instagram.com'
     ),
 
   ];

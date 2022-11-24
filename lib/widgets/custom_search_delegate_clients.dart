@@ -1,11 +1,12 @@
-import 'package:chronos/logic/artists.dart';
-import 'package:chronos/objects/artist.dart';
-import 'package:chronos/pages/view_artist.dart';
+
+import 'package:chronos/logic/clients.dart';
+import 'package:chronos/objects/client.dart';
+import 'package:chronos/pages/view_client.dart';
 import 'package:flutter/material.dart';
 
-class CustomSearchDelegateArtist extends SearchDelegate{
+class CustomSearchDelegateClients extends SearchDelegate{
   int indexValue = 0;
-  final List<Artist> artists = Artists.getArtists();
+  final List<Client> clients = ClientsLogic.getClients();
 
   @override
   List<Widget>? buildActions(BuildContext context) => [
@@ -25,17 +26,17 @@ class CustomSearchDelegateArtist extends SearchDelegate{
 
   @override
   Widget buildResults(BuildContext context) => ListTile(
-    leading: Image.network(artists[indexValue].networkImage),
-    title: Text(artists[indexValue].name),
-    subtitle: Text(artists[indexValue].city),
+    leading: Image.network(clients[indexValue].networkImage),
+    title: Text(clients[indexValue].name),
+    subtitle: Text(clients[indexValue].about, maxLines: 2, overflow: TextOverflow.ellipsis,),
     onTap: () {
-      Navigator.push(context, MaterialPageRoute(builder: (context)=> ViewArtistPage(artist: artists[indexValue])));
+      Navigator.push(context, MaterialPageRoute(builder: (context)=> ViewClientPage(client: clients[indexValue])));
     },
   );
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    List<Artist> suggestions = artists.where((item) {
+    List<Client> suggestions = clients.where((item) {
       final itemNameComparison = item.name.toLowerCase();
       final input = query.toLowerCase();
       return itemNameComparison.contains(input);
@@ -49,7 +50,7 @@ class CustomSearchDelegateArtist extends SearchDelegate{
           return ListTile(
             leading: Image.network(suggestions[index].networkImage),
             title: Text(suggestions[index].name),
-            subtitle: Text(suggestions[index].city),
+            subtitle: Text(suggestions[index].about , maxLines: 2, overflow: TextOverflow.ellipsis,),
             onTap: () {
               query = suggestions[index].name;
               showResults(context);

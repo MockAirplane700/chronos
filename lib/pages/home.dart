@@ -73,7 +73,6 @@ class _HomeState extends State<Home> {
       ),
       backgroundColor: backgroundColor,
       drawer: const CustomDrawer(),
-      bottomNavigationBar: const CustomBottomNavigationBar(selectedIndex: 0),
       body: Padding(
         padding: EdgeInsets.all(MediaQuery.of(context).size.height/80),
         child: SingleChildScrollView(
@@ -81,11 +80,12 @@ class _HomeState extends State<Home> {
             children: [
               SizedBox(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height/6,
+                height: MediaQuery.of(context).size.height/5,
                 child: GestureDetector(
                   child: CircleAvatar(
-                    radius: MediaQuery.of(context).size.height/80,
+                    radius: MediaQuery.of(context).size.height/50,
                     backgroundImage: NetworkImage(chronosClient.networkImage),
+                    backgroundColor: backgroundColor,
                   ),
                   onTap: () {
                     // go to the chronos client page
